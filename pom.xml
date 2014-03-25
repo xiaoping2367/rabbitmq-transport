@@ -6,6 +6,7 @@
   <artifactId>rabbitmq-transport</artifactId>
   <version>10.2.1</version>
   <name>rabbitmq</name>
+  <packaging>bundle</packaging>
   <description>rabbitmq transport for ArcGIS GeoEvent Processor</description>
   <packaging>bundle</packaging>
   <repositories>
