@@ -1,0 +1,33 @@
+<transport name="RabbitMqInboundTransport" label="RabbitMQ Inbound Transport" contact="blocke@odf.state.or.us" version="10.2.1" domain="rabbitmq.transport.inbound" type="inbound">
+	<description>RabbitMQ Inbound Transport</description>
+	<propertyDefinitions>
+		<propertyDefinition propertyName="hostname" label="Hostname"
+			description="Hostname of the RabbitMQ Server(Can be IP Address)"
+			propertyType="String" defaultValue="" mandatory="true" readOnly="false">
+		</propertyDefinition>
+		<propertyDefinition propertyName="userName" label="User Name"
+            description="User Name for RabbitMQ."
+            propertyType="String" defaultValue="" mandatory="false" readOnly="false">
+        </propertyDefinition>
+        <propertyDefinition propertyName="password" label="Password"
+            description="Password for RabbitMQ User Name."
+            propertyType="String" defaultValue="" mandatory="false" readOnly="false">
+        </propertyDefinition>
+		<propertyDefinition propertyName="exchange" label="Exchange Name"
+            description="RabbitMQ Exchange (is idempotent)."
+            propertyType="String" defaultValue="" mandatory="false" readOnly="false">
+        </propertyDefinition>
+        <propertyDefinition propertyName="exchangeType" label="Exchange Type"
+            description="Exchange Type : Topic, Direct, Fanout, Header"
+            propertyType="String" defaultValue="" mandatory="false" readOnly="false">
+        </propertyDefinition>
+        <propertyDefinition propertyName="queueName" label="Queue Name"
+            description="Queue Name to Subscribe to."
+            propertyType="String" defaultValue="" mandatory="false" readOnly="false">
+        </propertyDefinition>
+        <propertyDefinition propertyName="routingKey" label="Routing Key"
+            description="Routing Key : using a * will send to all subscribing."
+            propertyType="String" defaultValue="" mandatory="false" readOnly="false">
+        </propertyDefinition>
+	</propertyDefinitions>
+</transport>

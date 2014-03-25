@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" >
+	<bean id="rabbitMqInboundTransportServiceBean" class="rabbitmq.transport.RabbitMqInboundTransportService" activation="eager">
+		<property name="bundleContext" ref="blueprintBundleContext"/>
+	</bean>
+	<bean id="rabbitMqOutboundTransportServiceBean" class="rabbitmq.transport.RabbitMqOutboundTransportService" activation="eager">
+		<property name="bundleContext" ref="blueprintBundleContext"/>
+	</bean>
+	<service id="rabbitMqInboundTransportService" ref="rabbitMqInboundTransportServiceBean" interface="com.esri.ges.transport.TransportService"/>
+	<service id="rabbitMqOutboundTransportService" ref="rabbitMqOutboundTransportServiceBean" interface="com.esri.ges.transport.TransportService"/>
+</blueprint>

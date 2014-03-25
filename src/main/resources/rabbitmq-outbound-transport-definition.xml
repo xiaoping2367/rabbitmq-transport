@@ -1,0 +1,4 @@
+<transport name="RabbitMqOutboundTransport" label="RabbitMQ Outbound Transport" contact="blocke@odf.state.or.us" version="10.2.1" domain="rabbitmq.transport.outbound" type="outbound">
+	<description>RabbitMQ outbound transport.</description>
+	<propertyDefinitions/>
+</transport>

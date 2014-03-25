@@ -1,0 +1,5 @@
+rabbitmq\transport\RabbitMqOutboundTransportService.class
+rabbitmq\transport\RabbitMqInboundTransport.class
+rabbitmq\transport\RabbitMqInboundTransportService.class
+rabbitmq\transport\RabbitMqInboundTransport$1.class
+rabbitmq\transport\RabbitMqOutboundTransport.class
